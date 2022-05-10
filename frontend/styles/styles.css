@@ -83,3 +83,9 @@ ul, form {
 .todo:hover {
   cursor: pointer;
 }
+.item:hover {
+    cursor: pointer;
+}
+.item.completed::after {
+    content: "✔️";
+}
