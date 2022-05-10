@@ -63,11 +63,7 @@ export default class App extends React.Component {
         })
     }
 
-    showCompleted = () => {
-        this.setState({
-            todos: this.state.todos.filter(item => item.completed)
-        })
-    }
+  
 
 
 
@@ -79,8 +75,8 @@ export default class App extends React.Component {
                 </div>
                 <TodoList todos={this.state.todos} toggleTodo={this.toggleTodo} />
                 <Form addTodo={this.addTodo} />
-                <button onClick={this.hideCompleted}>Hide Completed Tasks</button>
-                <button onClick={this.showCompleted}>Show Completed Tasks</button>
+                <button onClick={this.hideCompleted}>Clear Completed Tasks</button>
+               
 
 
 
